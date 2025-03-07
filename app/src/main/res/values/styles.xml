@@ -1,0 +1,14 @@
+<resources>
+    <style name="PinInputStyle">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:hint">•</item>
+        <item name="android:inputType">numberPassword</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/ic_empty_dot</item>
+        <item name="android:layout_marginStart">12dp</item>
+    </style>
+</resources>

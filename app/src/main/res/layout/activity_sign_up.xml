@@ -1,10 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity">
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#121212">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="151dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-52dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="App Logo"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Email"
+        android:textColor="@color/white"
+        android:textColorHint="#888888"
+        android:backgroundTint="@color/white"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:drawableStart="@drawable/ic_email"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Password"
+        android:textColor="@color/white"
+        android:textColorHint="#888888"
+        android:backgroundTint="@color/white"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Set 6-digit PIN"
+        android:textColor="@color/white"
+        android:textColorHint="#888888"
+        android:backgroundTint="@color/white"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:padding="12dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etConfirmPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Confirm PIN"
+        android:textColor="@color/white"
+        android:textColorHint="#888888"
+        android:backgroundTint="@color/white"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:padding="12dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:layout_marginBottom="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="16sp"
+        android:textColor="#121212"
+        android:backgroundTint="#FFCC00"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Sign In"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
